@@ -7,7 +7,7 @@ on:
 jobs:
   i18n-check-run:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: TEST
     steps:
       - uses: actions/checkout@v4
         with:
