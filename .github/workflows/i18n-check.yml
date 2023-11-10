@@ -1,16 +1,19 @@
 name: i18n-check
 on:
-    pull_request:
-        branches:
-            main
+  pull_request:
+    branches:
+      main
 
 jobs:
   i18n-check-run:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Check i18n
         uses: dgaponov/weblate-action@v1.3
         with:
             SERVER_URL: "http://158.160.122.254"
