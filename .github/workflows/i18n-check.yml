@@ -13,6 +13,6 @@ jobs:
         id: hello
         uses: dgaponov/weblate-action@v1.3
         with:
-            SERVER_URL: "http://158.160.122.254/"
+            SERVER_URL: "http://158.160.122.254"
             TOKEN: ${{ secrets.WEBLATE_TOKEN }}
             PROJECT: "datalens"
