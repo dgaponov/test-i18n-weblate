@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: dgaponov/weblate-action@v1.2
+        uses: dgaponov/weblate-action@v1.3
         with:
             SERVER_URL: "http://158.160.122.254/"
             TOKEN: ${{ secrets.WEBLATE_TOKEN }}
