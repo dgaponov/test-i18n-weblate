@@ -11,9 +11,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: dgaponov/weblate-action@v1.1
+        uses: dgaponov/weblate-action@v1.3
         with:
-            serverUrl: "http://127.0.0.1"
-            token: "sometoken123"
-            project: "datalens"
-            PR_NO: ${{ github.event.pull_request.number }}
+            SERVER_URL: "http://158.160.122.254/api/"
+            TOKEN: ${{ secrets.WEBLATE_TOKEN }}
+            PROJECT: "datalens"
