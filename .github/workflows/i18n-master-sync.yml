@@ -1,0 +1,23 @@
+name: i18n-master-sync
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/i18n-keysets/**'
+
+jobs:
+  i18n-master-sync:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Upload changes to Weblate
+        uses: dgaponov/weblate-action@v1.28
+        with:
+            SERVER_URL: "http://158.160.122.254"
+            TOKEN: ${{ secrets.WEBLATE_TOKEN }}
+            PROJECT: "datalens"
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
