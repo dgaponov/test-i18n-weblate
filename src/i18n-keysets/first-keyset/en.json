@@ -2,5 +2,6 @@
     "first_key": "first_key",
     "second_key": "second_key change",
     "some_new_key": "yes",
-    "some_tesssst_key": "hello"
+    "some_tesssst_key": "hello",
+    "new_key_from_branch": "yes!"
 }
