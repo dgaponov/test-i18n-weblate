@@ -2,5 +2,6 @@
     "first_key": "первый_ключ",
     "second_key": "второй_ключ",
     "some_new_key": "да",
-    "some_tesssst_key": "привет"
+    "some_tesssst_key": "привет",
+    "new_key_from_branch": "yes!"
 }
