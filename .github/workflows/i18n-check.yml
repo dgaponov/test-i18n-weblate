@@ -10,6 +10,8 @@ on:
 jobs:
   i18n-check-run:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     name: A job to say hello
     steps:
       - uses: actions/checkout@v4
