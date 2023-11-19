@@ -29,3 +29,5 @@ jobs:
             TOKEN: ${{ secrets.WEBLATE_TOKEN }}
             PROJECT: "datalens"
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# TODO remove weblate branch after merge pull request
