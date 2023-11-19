@@ -1,3 +1,4 @@
 {
-    "some-random-key": "random text"
+    "some-random-key": "random text",
+    "new_key_second_keyset": "some new key"
 }
