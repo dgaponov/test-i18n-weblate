@@ -17,8 +17,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Check i18n
-        uses: dgaponov/weblate-action@v1.24
+        uses: dgaponov/weblate-action@v1.25
         with:
             SERVER_URL: "http://158.160.122.254"
             TOKEN: ${{ secrets.WEBLATE_TOKEN }}
             PROJECT: "datalens"
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
