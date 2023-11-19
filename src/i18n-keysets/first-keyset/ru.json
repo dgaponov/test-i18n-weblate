@@ -1,4 +1,5 @@
 {
     "first_key": "первый_ключ",
-    "second_key": "второй_ключ"
+    "second_key": "второй_ключ",
+    "some_new_key": "да"
 }
