@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - 'src/i18n-keysets/**'
+  workflow_dispatch:
 
 jobs:
   i18n-master-sync:
@@ -14,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Upload changes to Weblate
-        uses: dgaponov/weblate-action@v1.8.0
+        uses: dgaponov/weblate-action@v1.9.0
         with:
             SERVER_URL: "http://158.160.122.254"
             TOKEN: ${{ secrets.WEBLATE_TOKEN }}
