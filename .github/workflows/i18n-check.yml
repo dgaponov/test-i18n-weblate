@@ -18,7 +18,8 @@ on:
 
 jobs:
   i18n_check:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
+    if: github.actor != 'WeblateGravity'
     steps:
       - uses: actions/checkout@v4
         with:
